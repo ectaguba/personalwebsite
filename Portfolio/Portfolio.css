@@ -9,7 +9,7 @@
   --green: #048d5b;
   --dark-green: #035a3a;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'League Spartan', 'Arial';
 }
 
@@ -26,6 +26,9 @@ html {
   scroll-behavior: smooth;
 }
 
+div {
+  border-style: solid;
+}
 
 .flex-row-wrap-center {
   display: flex;
@@ -44,7 +47,14 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
+  padding: 0rem 12rem;
+  gap: 0;
+}
+
+#nav-name {
+  margin-right: auto;
+  font-weight: 900;
 }
 
 #nav-parent a {
@@ -60,42 +70,33 @@ html {
   background-color: var(--green);
 }
 
-#nav-name {
-  display: flex;
-  justify-content: left;
-  padding: 1.5rem;
-  width: 50%;
-  font-weight: 900;
-}
-
-#nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  gap: 0px;
-}
-
 /* about me */
 
 #about-me-container {
-  padding: 4rem 8rem;
-  height: 100vh;
-  font-size: 3vw;
+  padding: 4rem 12rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about-me-img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+
 }
 
 #about-me-description {
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 4rem 2rem;
-  color: white;
+  width: 60%;
+  margin: auto;
 }
 
 #about-me-description h1 {
   margin-bottom: 1rem;
-}
-
-.about-me-img {
-  width: 50%;
 }
 
 #aboutMeVideo {
@@ -156,7 +157,7 @@ html {
   padding: 2rem 1rem;
   margin: 1rem;
   border-radius: 5px;
-  transition: 0.5s;
+  transition: 0.25s;
 }
 
 @media (orientation: portrait), (max-width: 600px) {
@@ -166,10 +167,10 @@ html {
   }
 }
   
-  
 .project:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.025, 1.025);
 }
+
 
 .project-top {
   text-align: center;
