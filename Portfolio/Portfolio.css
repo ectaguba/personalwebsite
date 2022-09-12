@@ -292,7 +292,7 @@ html {
 
 /*footer*/
 
-#footer-container {
+footer {
   background-color: var(--black);
   padding: 8rem;
   color: white;
@@ -322,4 +322,10 @@ html {
 
 .footer-right ul li a:hover {
   color: var(--red);
+}
+
+footer h3 {
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
 }
