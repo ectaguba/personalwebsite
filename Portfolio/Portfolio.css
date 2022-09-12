@@ -26,18 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-div {
-  border-style: solid;
-}
-
-.flex-row-wrap-center {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /* navigation bar */
 #nav-parent {
@@ -66,7 +54,7 @@ div {
 }
 
 #nav-parent a:hover {
-  color: black; 
+  color: white; 
   background-color: var(--green);
 }
 
@@ -178,6 +166,7 @@ div {
 }
   
 .project-title {
+  color: black;
   font-size: 2vw 1vh;
 }
   
@@ -201,23 +190,27 @@ div {
 }
 
 /* contact */
+
 #contact-container {
   background-color: var(--light-gray);
   height: 100%;
   color: black;
-  padding: 4rem 2rem;
+  padding: 4rem 12rem;
+  display: block;
 }
 
 .contact-header {
   width: 50%;
-  padding: 2rem 8rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .all-packages {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   background-color: white;
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 
 .all-packages-header {
@@ -227,38 +220,61 @@ div {
 }
 
 .all-packages-list ul li {
-  margin-bottom: 9px;
+  text-align: left;
+  margin: 0 0 0.5rem 2rem;
 }
 
 .form {
   width: 50%;
+  margin: auto;
+  background-color: var(--green);
+  color: white;
+  border-radius: 10px;
+}
+
+.form h1 {
+  background-color: var(--dark-green);
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-body {
+  padding: 3rem 2rem 4rem;
 }
 
 .form-body input {
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 3px;
+  padding: 6px;
   text-align: left;
   margin-bottom: 18px;
 }
 
-.form-body li {
-  line-height: 1.5rem;
+
+.form-body textarea {
+  min-height: 8rem;
+  max-height: 16rem;
+  min-width: 100%;
+  max-width: 100%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.form-body h3 {
+  text-align: center;
 }
 
 #fname, #lname, #email {
   width: 100%;
 }
 
-.form-body textarea {
-  width: 100%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
 #submit {
   padding: 0.5rem 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
   font-family: "League Spartan", Arial;
   background-color: var(--dark-green);
   color: white;
@@ -273,11 +289,18 @@ div {
   color: var(--green);
 }
 
+
 /*footer*/
+
 #footer-container {
   background-color: var(--black);
   padding: 8rem;
   color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-left {
