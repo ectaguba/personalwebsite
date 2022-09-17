@@ -147,14 +147,12 @@ nav a:hover {
 
 @media (max-width: 1200px) {
   #about-me-container {
-    color: red;
     padding: 4rem 6rem;
   }
 }
 
 @media (max-width: 1000px) {
   #about-me-container {
-    color: blue;
     padding: 4rem;
   }
 }
@@ -236,7 +234,6 @@ nav a:hover {
   transform: scale(1.025, 1.025);
 }
 
-
 .project-top {
   text-align: center;
   padding-bottom: 0.83em;
@@ -277,7 +274,7 @@ nav a:hover {
 }
 
 .contact-header {
-  width: 50%;
+  width: 60%;
   margin: auto;
   margin-bottom: 2rem;
   text-align: center;
@@ -302,11 +299,35 @@ nav a:hover {
 }
 
 .form {
-  width: 50%;
+  width: 60%;
   margin: auto;
   background-color: var(--green);
   color: white;
   border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  #contact-container {
+    padding: 4rem 8rem;
+  }
+  .contact-header, .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 800px) {
+  #contact-container {
+    padding: 4rem;
+  }
+  .contact-header, .form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact-container {
+    padding: 4rem 1rem;
+  }
 }
 
 .form h1 {
@@ -371,38 +392,67 @@ nav a:hover {
 
 footer {
   background-color: var(--black);
-  padding: 8rem;
+  padding: 8rem 12rem;
   color: white;
+}
+
+footer div {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-around;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
-.footer-left {
-  font-size: 2.5vw;
-  width: 75%;
-  text-align: left;
-}
-
-.footer-right {
-  width: 25%;
-  text-align: right;
-}
-
-.footer-right ul li a {
+footer div a {
   color: white;
   text-decoration: none;
   transition: 0.25s;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
-.footer-right ul li a:hover {
-  color: var(--red);
+footer div a:hover {
+  color: var(--green);
+  background-color: white;
 }
 
-footer h3 {
-  margin-top: 1rem;
+@media (max-width: 1000px) {
+  footer {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding: 8rem 4rem;
+  }
+  footer div {
+    justify-content: center;
+  }
+  footer div h1 {
+    display: none;
+  }
+  .footer-links {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+footer p {
+  margin-top: 2rem;
   color: white;
   text-decoration: none;
 }
