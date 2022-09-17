@@ -183,7 +183,14 @@ nav a:hover {
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
-  padding: 2rem 4rem 3rem 4rem;
+  gap: 1rem;
+  padding: 4rem;
+}
+
+@media (max-width: 1000px) {
+  #project-container {
+    padding: 4rem;
+  }
 }
 
 #project-header {
@@ -200,18 +207,31 @@ nav a:hover {
   background-color: white;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
   padding: 2rem 1rem;
-  margin: 1rem;
   border-radius: 5px;
   transition: 0.25s;
 }
 
-@media (orientation: portrait), (max-width: 600px) {
+@media (orientation: portrait), (max-width: 800px) {
+  #project-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
   .project {
     width: 75%;
-    margin: 1rem;
+  }
+  .project-bottom {
+    text-align: center;
   }
 }
-  
+
+@media (max-width: 700px) {
+  .project {
+    width: 90%;
+  }
+}
+
 .project:hover {
   transform: scale(1.025, 1.025);
 }
