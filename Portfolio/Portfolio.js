@@ -1,15 +1,19 @@
 // navigation bar //
 
 // video //
+
+var aboutMeContainer = document.getElementById("about-me-container");
 var video = document.getElementById("aboutMeVideo");
-var btn = document.getElementById("montageBtn");
+var montageBtn = document.getElementById("montageBtn");
 
 function montageFunction() {
     if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause Background";
+      aboutMeContainer.style.backgroundColor = "rgba(21, 21, 21, 0)";
+      setTimeout(() => { video.play(); }, 0250);
+      montageBtn.innerHTML = "Pause";
     } else {
-      video.pause();
-      btn.innerHTML = "Play Background";
+      aboutMeContainer.style.backgroundColor = "rgba(21, 21, 21, 0.8)"
+      setTimeout(() => { video.pause(); }, 0250);
+      montageBtn.innerHTML = "Play";
     }
 }
