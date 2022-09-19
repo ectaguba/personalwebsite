@@ -110,11 +110,20 @@ nav a:hover {
 #about-me-description {
   width: 60%;
   margin: auto;
+}
+
+#about-me-description p {
   line-height: 18px;
 }
 
 #about-me-description h1 {
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  #about-me-description h1 {
+    font-size: 1.7rem;
+  }
 }
 
 #aboutMeVideo {
@@ -127,6 +136,7 @@ nav a:hover {
   min-height: 110%;
   z-index: -1;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .about-me-btn {
@@ -147,19 +157,19 @@ nav a:hover {
   border-color: var(--green);
 }
 
-@media (max-width: 1200px) {
+@media only screen (max-width: 1200px) {
   #about-me-container {
     padding: 4rem 6rem;
   }
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   #about-me-container {
     padding: 4rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 20em) and (max-width: 800px) {
   #about-me-container {
     color: white;
     flex-wrap: wrap;
@@ -211,7 +221,7 @@ nav a:hover {
   transition: 0.25s;
 }
 
-@media (orientation: portrait), (max-width: 800px) {
+@media (min-width: 20em) and (max-width: 800px), (orientation: portrait) {
   #project-container {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -226,7 +236,7 @@ nav a:hover {
   }
 }
 
-@media (max-width: 700px) {
+@media only screen and (min-width: 20em) and (max-width: 700px) {
   .project {
     width: 90%;
   }
@@ -326,7 +336,7 @@ nav a:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 20em) and (max-width: 800px) {
   #contact-container {
     padding: 4rem 1rem;
   }
@@ -428,13 +438,13 @@ footer div a:hover {
   background-color: white;
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   footer {
     padding: 8rem;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 20em) and (max-width: 800px) {
   footer {
     padding: 8rem 4rem;
   }
