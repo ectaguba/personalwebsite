@@ -39,9 +39,39 @@ nav {
   gap: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  nav {
+    padding: 0 8rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  nav {
+    padding: 0 12rem;
+  }
+}
+
 .push-left {
   margin-right: auto;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 768px) {
+  .push-left {
+    display: none;
+  }
 }
 
 nav a {
