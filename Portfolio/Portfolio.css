@@ -18,10 +18,6 @@
   padding: 0;
 }
 
-div {
-  border-style: solid;
-}
-
 html {
   position: relative;
   box-sizing: border-box;
