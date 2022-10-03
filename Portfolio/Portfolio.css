@@ -92,24 +92,48 @@ nav a:hover {
 #about-me-container {
   background-color: rgba(21, 21, 21, 0);
   transition: 0.25s;
-  padding: 4rem 12rem;
+  padding: 4rem 2rem;
   color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #about-me-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #about-me-container {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #about-me-container {
+    padding: 4rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #about-me-container {
+    padding: 4rem 12rem;
+  }
 }
 
 #about-me-img {
   max-width: 300px;
   max-height: 300px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 #about-me-description {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
@@ -121,9 +145,9 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 481px) {
   #about-me-description h1 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -156,12 +180,6 @@ nav a:hover {
   background-color: var(--white);
   color: var(--green);
   border-color: var(--green);
-}
-
-@media only screen and (max-width: 1200px) {
-  #about-me-container {
-    padding: 4rem 6rem;
-  }
 }
 
 /* projects */
