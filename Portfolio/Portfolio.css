@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+div {
+  border-style: solid;
+}
+
 html {
   position: relative;
   box-sizing: border-box;
@@ -192,37 +196,37 @@ nav a:hover {
   align-items: stretch;
   justify-content: center;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   #project-container {
-    padding: 4rem 0rem;
+    padding: 0 0 4rem;
   }
 }
 
 @media only screen and (min-width: 1025px) {
   #project-container {
-    padding: 4rem 2rem;
+    padding: 0 2rem 4rem;
   }
 }
 
 @media only screen and (min-width: 1201px) {
   #project-container {
-    padding: 4rem 4rem;
+    padding: 0 4rem 4rem;
   }
 }
 
-
 #project-header {
-  padding-top: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   display: block;
   background-color: var(--dark-gray);
   font-size: 3rem;
   text-align: center;
   color: white;
 }
-  
+
 .project {
   width: 100%;
   background-color: white;
@@ -277,15 +281,39 @@ nav a:hover {
   background-color: var(--light-gray);
   height: 100%;
   color: black;
-  padding: 4rem 12rem;
+  padding: 4rem 1rem;
   display: block;
 }
 
 .contact-header {
-  width: 60%;
+  width: 100%;
   margin: auto;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 481px) {
+  .contact-header {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .contact-header {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .contact-header {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .contact-header {
+    width: 50%;
+  }
 }
 
 .all-packages {
@@ -307,11 +335,35 @@ nav a:hover {
 }
 
 .form {
-  width: 60%;
+  width: 100%;
   margin: auto;
   background-color: var(--green);
   color: white;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 481px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .form {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .form  {
+    width: 40%;
+  }
 }
 
 .form h1 {
@@ -376,8 +428,31 @@ nav a:hover {
 
 footer {
   background-color: var(--black);
-  padding: 8rem 12rem;
+  padding: 8rem 2rem;
   color: white;
+}
+
+.solid-divider {
+  margin: 1rem;
+  border-top: 3px solid white;
+}
+
+@media only screen and (min-width: 769px) {
+  footer {
+    padding: 8rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  footer {
+    padding: 8rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  footer {
+    padding: 8rem 12rem;
+  }
 }
 
 footer div {
@@ -396,6 +471,12 @@ footer div {
   align-items: center;
 }
 
+@media only screen and (max-width: 769px) {
+  .footer-links {
+    flex-direction: row;
+  }
+}
+
 footer div a {
   color: white;
   text-decoration: none;
@@ -411,7 +492,7 @@ footer div a:hover {
 }
 
 footer p {
-  margin-top: 2rem;
+  margin: auto;
   color: white;
   text-decoration: none;
 }
