@@ -13,17 +13,22 @@
   font-family: 'League Spartan', 'Arial';
 }
 
+div {
+  border-style: solid;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   position: relative;
-  box-sizing: border-box;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 
@@ -281,6 +286,30 @@ nav a:hover {
   display: block;
 }
 
+@media only screen and (min-width: 481px) {
+  #contact-container {
+      padding: 4rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #contact-container {
+      padding: 4rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #contact-container {
+      padding: 4rem 10rem;        
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #contact-container {
+      padding: 4rem 14rem;        
+  }
+}
+
 .contact-header {
   width: 100%;
   margin: auto;
@@ -330,75 +359,79 @@ nav a:hover {
   margin: 0 0 0.5rem 2rem;
 }
 
-.form {
-  width: 100%;
+#form-container {
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
   margin: auto;
   background-color: var(--green);
   color: white;
-  border-radius: 10px;
 }
 
 @media only screen and (min-width: 481px) {
-  .form {
-    width: 80%;
+  #form-container {
+      width: 90%;
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .form {
-    width: 65%;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  .form {
-    width: 50%;
+  #form-container {
+      width: 75%;
   }
 }
 
 @media only screen and (min-width: 1201px) {
-  .form  {
-    width: 40%;
+  #form-container {
+      width: 70%;
   }
 }
 
-.form h1 {
-  background-color: var(--dark-green);
-  border-radius: 10px;
-  display: block;
+#form-header {
   text-align: center;
-  padding: 2rem;
+  background-color: var(--dark-green);
+  padding: 2rem 0;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-body {
-  padding: 3rem 2rem 4rem;
+.form-inputs {
+  margin: 1rem 2rem;
 }
 
-.form-body input {
+.form-inputs input, textarea {
+  font-family: 'League Spartan', 'Arial';
+  font-size: 1rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
   border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  padding: 6px;
-  text-align: left;
-  margin-bottom: 18px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+.form-inputs #fname, #lname, #email {
+  width: 100%;
+}
 
-.form-body textarea {
-  min-height: 8rem;
-  max-height: 16rem;
+@media only screen and (min-width: 481px) {
+  .form-inputs {
+    padding: 1rem 2rem;
+  }
+}
+
+.form-inputs textarea {
   min-width: 100%;
   max-width: 100%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  min-height: 6rem;
+  max-height: 12rem;
   border-radius: 5px;
-  margin-bottom: 1rem;
+  border-width: 2px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-.form-body h3 {
-  text-align: center;
-}
-
-#fname, #lname, #email {
-  width: 100%;
+.form-inputs input.features {
+  transform: scale(1.5, 1.5);
+  margin-right: 1rem;
 }
 
 #submit {
@@ -418,7 +451,6 @@ nav a:hover {
   border-color: var(--green);
   color: var(--green);
 }
-
 
 /*footer*/
 
