@@ -6,7 +6,7 @@ var aboutMeContainer = document.getElementById("about-me-container");
 var video = document.getElementById("aboutMeVideo");
 var montageBtn = document.getElementById("montageBtn");
 
-function montageFunction() {
+let montageFunction = () => {
     if (video.paused) {
       aboutMeContainer.style.backgroundColor = "rgba(21, 21, 21, 0)";
       setTimeout(() => { video.play(); }, 0250);
