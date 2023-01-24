@@ -1,19 +1,252 @@
 <!DOCTYPE html>
-<title>Chris Taguba</title>
+<title>Video Portfolio - Chris Taguba</title>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div>
-        <h1>Chris Taguba's Digital Portfolio</h1>
-    </div>
+  <link rel="stylesheet" href="CSS/Portfolio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <nav>
+      <p class="push-left">ED CHRISTOPHER TAGUBA</p>
+      <a href="Portfolio.html">Home</a>
+      <a href="https://www.linkedin.com/in/ed-chris-taguba/">Contact</a> 
+  </nav>
 </head>
+
 <body>
-    <h1>Programming Projects</h1>
-    <a href="Portfolio/Portfolio.html">- Video Portfolio</a>
-    <a href="https://niichirin.github.io/COCAllCanCode/index.html">- COC All Can Code Website</a>
+  <div id="about-me-container">
+    <video id="aboutMeVideo" autoplay loop muted>
+      <source src="Portfolio Website Montage.mp4">
+    </video>
+
+    <img id="about-me-img" src="Headshot with Mask.jpeg">
+
+    <div id="about-me-description">
+
+      <h1 style="text-align:center">ABOUT CHRIS TAGUBA</h1>
+      <p>I have an extensive background in content creation from high school. During my four years in West Ranch TV, I learned how to write scripts, shoot, and edit footage to portray a message through storytelling. I edited all types of videos such as informational segments, short films, ceremonial videos, montages, and social media content.</p> 
+      <br>
+      <p>Currently, I’m a 17 y/o student at College of the Canyons studying Computer Science. My purpose with this website is to kickstart my programming journey by learning basic coding applications, all while applying and retaining my video editing skills by providing various content creation services.</p>
+      <button onclick="montageFunction()" id="montageBtn" class="about-me-btn">Pause Video</button>
+    </div>
+
+  </div>
+
+  <div id="projects-section">
+    <h1 id="project-header">PROJECTS</h1>
+    <div id="project-container"> <!--flexbox-->
+      
+      <div class="project">
+
+        <div class="project-top"> <!--title-->
+          <div class="project-title">
+            <h3>"Quite Frankly" MV</h3>
+          </div>
+          <div class="project-subtitle">
+            <h5>Music Video</h5>
+          </div>
+        </div>
+
+        <div class="project-middle"> <!--video-->
+          <iframe class="center-project" src="https://www.youtube.com/embed/N1fHJ5oPHlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-bottom"> <!--description-->
+          <p>A teenage girl reflects on her relationship with a former lover.</p>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="project-top">
+          <div class="project-title">
+            <h3>"Walls" MV</h3>
+          </div>
+          <div class="project-subtitle">
+            <h5>Music Video</h5>
+          </div>
+        </div>
+
+        <div class="project-middle">
+          <iframe class="center-project" src="https://www.youtube.com/embed/4iznfcR0Nuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-bottom">
+          <p>A struggling student opens up to her mother.</p>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="project-top">
+          <div class="project-title">
+            <h3>Homecoming</h3>
+          </div>
+          <div class="project-subtitle">
+            <h5>Short Film</h5>
+          </div>
+        </div>
+
+        <div class="project-middle">
+          <iframe class="center-project" src="https://www.youtube.com/embed/ByBsjT6KIfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-bottom">
+          <p>Two teenagers prepare their homecoming posters.</p>
+        </div>
+
+      </div>
+
+      <div class="project">
+
+        <div class="project-top">
+          <div class="project-title">
+            <h3>Exchange Student</h3>
+          </div>
+          <div class="project-subtitle">
+            <h5>News Segment</h5>
+          </div>
+        </div>
+
+        <div class="project-middle">
+          <iframe class="center-project" src="https://www.youtube.com/embed/v9oSIgK3_zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-bottom">
+          <p>A high school student tells her experience living as a foreign exchange student in Germany.</p>
+        </div>
+      </div>
+
+      <div class="project">
+
+        <div class="project-top">
+          <div class="project-title">
+            <h3>AOC C/O 2020 Graduation</h3>
+          </div>
+          <div class="project-subtitle">
+            <h5>Ceremonial Video</h5>
+          </div>
+        </div>
+
+        <div class="project-middle">
+          <iframe class="center-project" src="https://www.youtube.com/embed/7KXl5rorN0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="project-bottom">
+          <p>Virtual graduation video for the Class of 2020 at the Academy of the Canyons.</p>
+        </div>
+        
+      </div>
+
+      <div class="project">
+
+          <div class="project-top">
+            <div class="project-title">
+              <h3>Pratika Prasad ASB Campaign</h3>
+            </div>
+            <div class="project-subtitle">
+              <h5>Promotional Video</h5>
+            </div>
+          </div>
+
+          <div class="project-middle">
+            <iframe class="center-project" src="https://www.youtube.com/embed/mQ5kNr14KPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="project-bottom">
+            <p>2022 West Ranch ASB Ambassador Campaign video for Pratika Prasad.</p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div id="contact-container">
+
+    <div class="contact-header">  
+
+      <h1>Want me to edit a video?</h1>
+      <br>
+      <h2>Contact me here and I'll consult with your needs.</h2>
+      <br>
+
+      <div class="all-packages">
+
+        <div class="all-packages-header">
+        <h2>ALL videos come with:</h2>
+        </div>
+
+        <div class="all-packages-list">
+          <ul>
+            <li>Color Grading</li>
+            <li>Motion Graphics</li>
+            <li>Basic VFX</li>
+            <li>Zoom and Swipe Transitions</li>
+            <li>Variety of Sound Design</li>
+            <li>At least one revision</li>
+            <li>At least five days of delivery</li>
+            <li>Consultation and Price Negotation.</li>
+          </ul>  
+        </div>
+
+      </div>
+      
+    </div>
+    <div id="form-container">
+      <h1 id="form-header">VIDEO DETAILS</h1>
+      <div class="form-inputs">
+        <label for="fname">First Name:</label>
+        <br>
+        <input type="text" id="fname" name="fname" required>
+        <br>
+
+        <label for="lname">Last Name:</label>
+        <br>
+        <input type="text" id="lname" name="lname" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="length">How many minutes do you want your video? (1-10)</label>
+        <br>
+        <input type="number" id="length" name="length" min="1" max="10" required>
+        <br>
+
+        <label for="other">Please list the specifications you need for your video.</label>
+        <br>
+        <textarea name="other" cols="40" rows="5"></textarea>
+        <br><br>
+
+        <label for="features">What other features do you need?</label><br><br>
+        <input type="checkbox" class="features" name="features" multiple>Subtitles</input><br>
+        <input type="checkbox" class="features" name="features" multiple>Original Project File</input><br>
+        <input type="checkbox" class="features" name="features" multiple>Extra Revisions</input><br>
+        <input type="checkbox" class="features" name="features" multiple>Extra Aspect Ratio Orientation</input><br>
+        <br>
+
+        <label for="submit"></label>
+        <input id="submit" type="submit"></input>
+
+        <h3>Prices may very during consulation.</h3>
+      </div>
+
+    </div>
+    -->
+  </div>
+  
+  <script src="JavaScript/Portfolio.js"></script>
+
 </body>
 <footer>
-    <h1>Chris Taguba</h1>
-    <a href="https://www.linkedin.com/in/ed-chris-taguba/">LinkedIn</a>
-    <a href="https://www.youtube.com/channel/UCvdz8oJUaaQTb_twrnjxsdw">YouTube</a>
-    <a href="#">Resume</a>
+  <div>
+    <h1 class="push-left">ED CHRISTOPHER TAGUBA</h1>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ed-chris-taguba/">LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCvdz8oJUaaQTb_twrnjxsdw">YouTube</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
 </footer>
